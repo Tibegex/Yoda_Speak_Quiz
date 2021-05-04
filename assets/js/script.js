@@ -1,3 +1,4 @@
+
 var questions = [
   {
     question: "What is your favorite color?",
@@ -24,3 +25,7 @@ var questions = [
     answer: "Yes No",
   },
 ];
+
+
+
+$(".start").on("click", displayQuestions());
