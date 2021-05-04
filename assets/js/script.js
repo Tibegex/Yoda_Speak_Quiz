@@ -1,2 +1,1 @@
-var test = "test";
-var test2 = false;
+$(".start").on("click", displayQuestions());
