@@ -1,4 +1,4 @@
- *,
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -17,7 +17,6 @@
   color: var(--darkBrown);
   background-color: var(--lightBrown);
   border-bottom: solid 8px;
-
 }
 .btn {
   background-color: #75934e;
@@ -27,4 +26,5 @@
 }
 
 .btn:hover {
-  border-color: black;}
+  border-color: black;
+}
