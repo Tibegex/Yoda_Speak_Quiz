@@ -1,3 +1,10 @@
+ *,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: fantasy;
+}
+
 :root {
   --darkBrown: #3c3c20;
   --lightBrown: #9d9974;
@@ -10,4 +17,14 @@
   color: var(--darkBrown);
   background-color: var(--lightBrown);
   border-bottom: solid 8px;
+
 }
+.btn {
+  background-color: #75934e;
+  border-radius: 5px 10px;
+  color: black;
+  outline: none;
+}
+
+.btn:hover {
+  border-color: black;}
