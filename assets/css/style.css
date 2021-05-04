@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: fantasy;
+}
+
+.btn {
+  background-color: #75934e;
+  border-radius: 5px 10px;
+  color: black;
+  outline: none;
+}
+
+.btn:hover {
+  border-color: black;
+}
