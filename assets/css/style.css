@@ -1,5 +1,13 @@
-.jumbotron .container {
+:ratio {
+  --darkBrown: #3c3c20;
+  --lightBrown: #9d9974;
+  --lighterBrown: #d5cfb6;
+  --darkGreen: #616640;
+  --lightGreen: #75934e;
+}
+
+.jumbotron {
   color: #3c3c20;
-  background-color: #d5cfb6;
+  background-color: #9d9974;
   border-bottom: solid 8px;
 }
