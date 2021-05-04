@@ -1,9 +1,9 @@
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
   font-family: fantasy;
-}
+} */
 
 .btn {
   background-color: #75934e;
