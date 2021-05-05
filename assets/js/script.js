@@ -23,23 +23,69 @@ var questions = [
     ],
   },
   {
-    question: "What is your birth date?",
-    month:
-      "January February March April May June July August September October November December",
-    day:
-      "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31",
+    question: "What month were you born?",
+    answer: [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ],
+  },
+  {
+    question: "And what day?",
+    answer: [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+    ],
   },
   {
     question: "Are you a dog or cat person?",
-    answer: "Cat Dog",
+    answer: ["Cat", "Dog"],
   },
   {
     question: "What console do you mainly play games on?",
-    answer: "XBox PC PlayStation",
+    answer: ["XBox", "PC", "PlayStation"],
   },
   {
     question: "Do you like pineapples on your pizza?",
-    answer: "Yes No",
+    answer: ["Yes", "No"],
   },
 ];
 
@@ -59,5 +105,11 @@ function displayQuestions() {
       button.text(questions[questionCounter].answer[i]);
       quiz.append(button);
     }
+
+    $(".submit").on("click", function () {
+      questionCounter++;
+      $(".submit").remove();
+      displayQuestions();
+    });
   }
 }
