@@ -129,3 +129,19 @@ function getDogApi() {
     });
 }
 getDogApi();
+
+// FUNCTION FOR CAT API
+
+function getCatApi() {
+  var catUrl = "https://cataas.com/cat?json=true";
+
+  fetch(catUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+    });
+}
+
+getCatApi();
