@@ -111,5 +111,7 @@ function displayQuestions() {
       $(".submit").remove();
       displayQuestions();
     });
+  } else {
+    questionH3.text("Yoda says");
   }
 }
