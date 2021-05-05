@@ -89,7 +89,7 @@ var questions = [
   },
 ];
 
-var yodaSayings = [
+var yodaSaying = [
   "You're%all%about%what%is%next-%the%next%adventure%or%project.%",
   "If%tested,%you%will%stand%your%ground%with%grace%and%composure.%",
   "You%have%a%special%connection%to%nature.%It%feeds%your%soul.%",
@@ -164,7 +164,7 @@ function displayYoda() {
   var color;
   var answer0 = JSON.parse(localStorage.getItem("answer0"));
   if (answer0 === "Red") {
-    color = yodaSayings[0];
+    color = yodaSaying[0];
   } else if (answer0 === "Blue") {
     color = yodaSaying[1];
   } else if (answer0 === "Green") {
@@ -213,73 +213,73 @@ function displayYoda() {
   var pineapple;
   var answer5 = JSON.parse(localStorage.getItem("answer5"));
   if (answer5 === "Yes") {
-    pineapple = yodaSayings[33];
+    pineapple = yodaSaying[33];
   } else if (answer5 === "No") {
-    pineapple = yodaSayings[34];
+    pineapple = yodaSaying[34];
   }
   var zodiac;
   var month = JSON.parse(localStorage.getItem("answer1"));
   var day = parseInt(localStorage.getItem("answer2"));
 
   if (month === "January" && day < 20) {
-    zodiac = yodaSayings[29];
+    zodiac = yodaSaying[29];
   } else if (month === "January" && day > 19) {
-    zodiac = yodaSayings[18];
+    zodiac = yodaSaying[18];
   } else if (month === "February" && day < 19) {
-    zodiac = yodaSayings[18];
+    zodiac = yodaSaying[18];
   } else if (month === "February" && day > 18) {
-    zodiac = yodaSayings[19];
+    zodiac = yodaSaying[19];
   } else if (month === "March" && day < 21) {
-    zodiac = yodaSayings[19];
+    zodiac = yodaSaying[19];
   } else if (month === "March" && day > 20) {
-    zodiac = yodaSayings[20];
+    zodiac = yodaSaying[20];
   } else if (month === "April" && day < 20) {
-    zodiac = yodaSayings[20];
+    zodiac = yodaSaying[20];
   } else if (month === "April" && day > 19) {
-    zodiac = yodaSayings[21];
+    zodiac = yodaSaying[21];
   } else if (month === "May" && day < 21) {
-    zodiac = yodaSayings[21];
+    zodiac = yodaSaying[21];
   } else if (month === "May" && day > 20) {
-    zodiac = yodaSayings[22];
+    zodiac = yodaSaying[22];
   } else if (month === "June" && day < 21) {
-    zodiac = yodaSayings[22];
+    zodiac = yodaSaying[22];
   } else if (month === "June" && day > 20) {
-    zodiac = yodaSayings[23];
+    zodiac = yodaSaying[23];
   } else if (month === "July" && day < 23) {
-    zodiac = yodaSayings[23];
+    zodiac = yodaSaying[23];
   } else if (month === "July" && day > 22) {
-    zodiac = yodaSayings[24];
+    zodiac = yodaSaying[24];
   } else if (month === "August" && day < 23) {
-    zodiac = yodaSayings[24];
+    zodiac = yodaSaying[24];
   } else if (month === "August" && day > 22) {
-    zodiac = yodaSayings[25];
+    zodiac = yodaSaying[25];
   } else if (month === "September" && day < 23) {
-    zodiac = yodaSayings[25];
+    zodiac = yodaSaying[25];
   } else if (month === "September" && day > 22) {
-    zodiac = yodaSayings[26];
+    zodiac = yodaSaying[26];
   } else if (month === "October" && day < 23) {
-    zodiac = yodaSayings[26];
+    zodiac = yodaSaying[26];
   } else if (month === "October" && day > 22) {
-    zodiac = yodaSayings[27];
+    zodiac = yodaSaying[27];
   } else if (month === "November" && day < 22) {
-    zodiac = yodaSayings[27];
+    zodiac = yodaSaying[27];
   } else if (month === "November" && day > 21) {
-    zodiac = yodaSayings[28];
+    zodiac = yodaSaying[28];
   } else if (month === "December" && day < 22) {
-    zodiac = yodaSayings[28];
+    zodiac = yodaSaying[28];
   } else if (month === "December" && day > 21) {
-    zodiac = yodaSayings[29];
+    zodiac = yodaSaying[29];
   }
 
-  var yodaUrl =
-    // "https://api.funtranslations.com/translate/yoda.json?text=";
-    fetch(yodaUrl + color + gamingConsole + pineapple + zodiac)
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (data) {
-        console.log(data);
-      });
+  var yodaUrl = "https://";
+  // "https://api.funtranslations.com/translate/yoda.json?text=";
+  fetch(yodaUrl + color + gamingConsole + pineapple + zodiac)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+    });
 }
 
 // FUNCTION FOR DOG API
