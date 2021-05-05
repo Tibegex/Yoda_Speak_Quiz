@@ -17,7 +17,22 @@
   color: var(--darkBrown);
   background-color: var(--lightBrown);
   border-bottom: solid 8px;
+  margin-bottom: 2rem;
 }
+
+.yodaImg {
+  max-width: 225px;
+  padding: 1rem;
+}
+
+.quiz {
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+}
+
 .btn {
   background-color: #75934e;
   border-radius: 5px 10px;
