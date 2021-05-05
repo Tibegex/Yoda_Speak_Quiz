@@ -115,3 +115,17 @@ function displayQuestions() {
     questionH3.text("Yoda says");
   }
 }
+
+// FUNCTION FOR DOG API
+function getDogApi() {
+  var dogUrl = "https://dog.ceo/api/breeds/image/random";
+
+  fetch(dogUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+    });
+}
+getDogApi();
