@@ -1,9 +1,26 @@
-
 var questions = [
   {
     question: "What is your favorite color?",
-    answer:
-      "Red Blue Green Orange Yellow Pink Purple Violet Turquoise Gold Lime Aqua Navy Coral Teal Brown White Black",
+    answer: [
+      "Red",
+      "Blue",
+      "Green",
+      "Orange",
+      "Yellow",
+      "Pink",
+      "Purple",
+      "Violet",
+      "Turquoise",
+      "Gold",
+      "Lime",
+      "Aqua",
+      "Navy",
+      "Coral",
+      "Teal",
+      "Brown",
+      "White",
+      "Black",
+    ],
   },
   {
     question: "What is your birth date?",
@@ -26,6 +43,20 @@ var questions = [
   },
 ];
 
+var questionH3 = document.getElementsByClassName("question");
+var questionCounter = 0;
 
+$(".start").on("click", displayQuestions);
 
-$(".start").on("click", displayQuestions());
+function displayQuestions() {
+  if (questionCounter < questions.length) {
+    questionH3.textContent = questions[questionCounter].question;
+
+    for (i = 0; i < questions[questionCounter].answer.length; i++) {
+      var quiz = $(".quiz");
+      var button = $("<button>");
+      button.text(questions[questionCounter].answer[i]);
+      quiz.append(button);
+    }
+  }
+}
