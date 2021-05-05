@@ -14,6 +14,7 @@
 }
 
 .jumbotron {
+  font-family: fantasy;
   color: var(--darkBrown);
   background-color: var(--lightBrown);
   border-bottom: solid 8px;
