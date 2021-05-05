@@ -43,18 +43,19 @@ var questions = [
   },
 ];
 
-var questionH3 = document.getElementsByClassName("question");
+// var questionH3 = document.getElementsByClassName("question");
+var questionH3 = $(".question");
 var questionCounter = 0;
 
 $(".start").on("click", displayQuestions);
 
 function displayQuestions() {
   if (questionCounter < questions.length) {
-    questionH3.textContent = questions[questionCounter].question;
+    questionH3.text(questions[questionCounter].question);
 
     for (i = 0; i < questions[questionCounter].answer.length; i++) {
       var quiz = $(".quiz");
-      var button = $("<button>");
+      var button = $("<button>").addClass("submit");
       button.text(questions[questionCounter].answer[i]);
       quiz.append(button);
     }
