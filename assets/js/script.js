@@ -112,8 +112,22 @@ function displayQuestions() {
       displayQuestions();
     });
   } else {
-    questionH3.text("Yoda says");
+    displayYoda();
   }
+}
+// FUNCTION FOR DISPLAYING THE YODA PHRASE
+function displayYoda() {
+  questionH3.text("Yoda says");
+  //add sayings based off variables in if else statements
+  var yodaUrl =
+    "https://api.funtranslations.com/translate/yoda.json?text=I%20speak%20like%20Yoda.";
+  fetch(yodaUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+    });
 }
 
 // FUNCTION FOR DOG API
