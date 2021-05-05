@@ -107,6 +107,7 @@ function displayQuestions() {
     }
 
     $(".submit").on("click", function () {
+      localStorage.setItem("answer" + questionCounter, $(this).text());
       questionCounter++;
       $(".submit").remove();
       displayQuestions();
