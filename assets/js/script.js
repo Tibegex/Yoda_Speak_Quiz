@@ -89,7 +89,6 @@ var questions = [
   },
 ];
 
-// var questionH3 = document.getElementsByClassName("question");
 var questionH3 = $(".question");
 var questionCounter = 0;
 
