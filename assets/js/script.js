@@ -133,12 +133,13 @@ var questionCounter = 0;
 $(".start").on("click", displayQuestions);
 
 function displayQuestions() {
+  $("#start-btn").addClass("hidden");
   if (questionCounter < questions.length) {
     questionH3.text(questions[questionCounter].question);
 
     for (i = 0; i < questions[questionCounter].answer.length; i++) {
       var quiz = $(".quiz");
-      var button = $("<button>").addClass("submit");
+      var button = $("<button>").addClass("submit btn");
       button.text(questions[questionCounter].answer[i]);
       quiz.append(button);
     }
@@ -159,7 +160,7 @@ function displayQuestions() {
 
 // FUNCTION FOR DISPLAYING THE YODA PHRASE
 function displayYoda() {
-  questionH3.text("Yoda says");
+  questionH3.text("");
   //add sayings based off variables in if else statements
   var color;
   var answer0 = JSON.parse(localStorage.getItem("answer0"));
@@ -273,12 +274,14 @@ function displayYoda() {
 
   var animal = JSON.parse(localStorage.getItem("answer3"));
   if (animal === "Dog") {
+    $("div").removeClass("hidden");
     getDogApi();
   } else {
+    $("div").removeClass("hidden");
     getCatApi();
   }
 
-  var yodaUrl = "https://";
+  var yodaUrl = "https";
   // "https://api.funtranslations.com/translate/yoda.json?text=";
   fetch(yodaUrl + color + gamingConsole + pineapple + zodiac)
     .then(function (response) {

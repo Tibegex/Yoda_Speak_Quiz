@@ -12,6 +12,9 @@
   --darkGreen: #616640;
   --lightGreen: #75934e;
 }
+body {
+  background-color: var(--lighterBrown);
+}
 
 .jumbotron {
   font-family: fantasy;
@@ -19,6 +22,12 @@
   background-color: var(--lightBrown);
   border-bottom: solid 8px;
   margin-bottom: 2rem;
+}
+.card-body {
+  width: 300px;
+  color: var(--darkBrown);
+  background-color: var(--lighterBrown);
+  border: var(--darkGreen) solid;
 }
 
 .yodaImg {
@@ -43,8 +52,13 @@
   border-radius: 5px 10px;
   color: black;
   outline: none;
+  margin: 5px;
 }
 
 .btn:hover {
   border-color: black;
+}
+
+.hidden {
+  display: none;
 }
