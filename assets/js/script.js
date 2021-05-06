@@ -90,41 +90,41 @@ var questions = [
 ];
 
 var yodaSaying = [
-  "You're%all%about%what%is%next-%the%next%adventure%or%project.%",
-  "If%tested,%you%will%stand%your%ground%with%grace%and%composure.%",
-  "You%have%a%special%connection%to%nature.%It%feeds%your%soul.%",
-  "Team%building%is%a%natural%skill%because%others%are%drawn%to%your%zest%for%life%and%even-keeled%positivity.%",
-  "While%others%are%stalled%by%indecisiveness,%your%spontaneity%and%willingness%to%take%action%positions%you%several%steps%ahead%of%the%competition.%",
-  "Witty%and%smart,%you%sparkle%socially%particularly%in%small%groups.%",
-  "That%little%voice%inside%your%head%is%especially%chatty%and%clear.%",
-  "Bursting%with%charisma,%you%are%like%a%people%magnet.%",
-  "Flying%by%the%seat%of%your%pants%usually%works%out%well%for%you.%",
-  "Others%trust%you%to%set%the%bar%for%appropriate%behavior%and%decorum.%",
-  "You%have%a%knack%for%seeing%the%big%picture%and%understanding%multiple%points%of%view.%",
-  "Recognizing%and%putting%the%needs%of%others%first%works%for%you.%",
-  "You%have%a%keen%sense%of%fair%play%and%like%being%in%charge%of%keeping%order.%",
-  "You%are%outgoing%and%usually%enjoy%being%the%life%of%the%party%and%center%of%attention.%",
-  "You%endear%yourself%quickly%with%your%uncanny%ability%to%recall%names%and%tidbits%of%info%about%others.%",
-  "You%do%things%slow%and%stead.%Do%it%right%or%not%at%all.%",
-  "You%have%a%special%knack%for%finding%treasures%in%the%most%unexpected%places.%",
-  "You%are%comfortable%projecting%an%air%of%mystery,%which%can%help%mask%moments%of%insecurity.%",
-  "You%need%to%learn%to%trust%others%and%express%your%emotions%in%a%healthy%way.%",
-  "You%tend%to%take%the%role%of%a%martyr%in%order%to%catch%attention.%",
-  "You%need%to%learn%patience%and%to%keep%your%temper%in%check.%",
-  "You%need%to%learn%to%not%be%so%stubborn.%Your%way%is%not%always%the%best.%",
-  "Please%make%up%your%mind.%This%double%head%thing%gets%annoying.%",
-  "When%you%see%a%glass%that%is%half%empty,%remember%that%it%is%also%half%full.%",
-  "We%still%do%not%know%what%is%at%the%center%of%the%universe,%but%we%are%sure%that%you%are%not%it.%",
-  "Please%take%a%chill%pill.%Sometimes%it%is%okay%to%play.%",
-  "Forgive%and%forget.%That%grudge%is%just%going%to%give%you%wrinkles.%",
+  "You're%20all%20about%20what%20is%20next-%20the%20next%20adventure%20or%20project.%20",
+  "If%20tested,%20you%20will%20stand%20your%20ground%20with%20grace%20and%20composure.%20",
+  "You%20have%20a%20special%20connection%20to%20nature.%20It%20feeds%20your%20soul.%20",
+  "Team%20building%20is%20a%20natural%20skill%20because%20others%20are%20drawn%20to%20your%20zest%20for%20life%20and%20even-keeled%20positivity.%20",
+  "While%20others%20are%20stalled%20by%20indecisiveness,%20your%20spontaneity%20and%20willingness%20to%20take%20action%20positions%20you%20several%20steps%20ahead%20of%20the%20competition.%20",
+  "Witty%20and%20smart,%20you%20sparkle%20socially%20particularly%20in%20small%20groups.%20",
+  "That%20little%20voice%20inside%20your%20head%20is%20especially%20chatty%20and%20clear.%20",
+  "Bursting%20with%20charisma,%20you%20are%20like%20a%20people%20magnet.%20",
+  "Flying%20by%20the%20seat%20of%20your%20pants%20usually%20works%20out%20well%20for%20you.%20",
+  "Others%20trust%20you%20to%20set%20the%20bar%20for%20appropriate%20behavior%20and%20decorum.%20",
+  "You%20have%20a%20knack%20for%20seeing%20the%20big%20picture%20and%20understanding%20multiple%20points%20of%20view.%20",
+  "Recognizing%20and%20putting%20the%20needs%20of%20others%20first%20works%20for%20you.%20",
+  "You%20have%20a%20keen%20sense%20of%20fair%20play%20and%20like%20being%20in%20charge%20of%20keeping%20order.%20",
+  "You%20are%20outgoing%20and%20usually%20enjoy%20being%20the%20life%20of%20the%20party%20and%20center%20of%20attention.%20",
+  "You%20endear%20yourself%20quickly%20with%20your%20uncanny%20ability%20to%20recall%20names%20and%20tidbits%20of%20info%20about%20others.%20",
+  "You%20do%20things%20slow%20and%20stead.%20Do%20it%20right%20or%20not%20at%20all.%20",
+  "You%20have%20a%20special%20knack%20for%20finding%20treasures%20in%20the%20most%20unexpected%20places.%20",
+  "You%20are%20comfortable%20projecting%20an%20air%20of%20mystery,%20which%20can%20help%20mask%20moments%20of%20insecurity.%20",
+  "You%20need%20to%20learn%20to%20trust%20others%20and%20express%20your%20emotions%20in%20a%20healthy%20way.%20",
+  "You%20tend%20to%20take%20the%20role%20of%20a%20martyr%20in%20order%20to%20catch%20attention.%20",
+  "You%20need%20to%20learn%20patience%20and%20to%20keep%20your%20temper%20in%20check.%20",
+  "You%20need%20to%20learn%20to%20not%20be%20so%20stubborn.%20Your%20way%20is%20not%20always%20the%20best.%20",
+  "Please%20make%20up%20your%20mind.%20This%20double%20head%20thing%20gets%20annoying.%20",
+  "When%20you%20see%20a%20glass%20that%20is%20half%20empty,%20remember%20that%20it%20is%20also%20half%20full.%20",
+  "We%20still%20do%20not%20know%20what%20is%20at%20the%20center%20of%20the%20universe,%20but%20we%20are%20sure%20that%20you%20are%20not%20it.%20",
+  "Please%20take%20a%20chill%20pill.%20Sometimes%20it%20is%20okay%20to%20play.%20",
+  "Forgive%20and%20forget.%20That%20grudge%20is%20just%20going%20to%20give%20you%20wrinkles.%20",
   "Yoda%20is%20the%20only%20one%20who%20should%20be%20green.%20Stop%20being%20jealous.%20",
   "Your%20words%20have%20consequences.%20Try%20being%20a%20little%20diplomatic%20once%20and%20a%20while. %20",
   "Do%20you%20ever%20tire%20of%20being%20an%20insufferable%20know-it-all?%20",
   "Your%20hands%20are%20too%20big!%20Must%20have%20the%20bulky%20controller!%20",
-  "Your%delicate%touch%must%only%be%used%on%the%high%quality%gaming%systems.%",
-  "Buttons!%Buttons!%Buttons!%My precious buttons!%",
-  "Ignore%the%naysayers.%Pineapple%simply%tastes%good%and%is%healthy!%",
-  "The%texture,%who%could%love%the%mess.%Stick%with%the%meat%and%cheese%like%an%American!%",
+  "Your%20delicate%20touch%20must%20only%20be%20used%20on%20the%20high%20quality%20gaming%20systems.%20",
+  "Buttons!%20Buttons!%20Buttons!%20My%20precious%20buttons!%20",
+  "Ignore%20the%20naysayers.%20Pineapple%20simply%20tastes%20good%20and%20is%20healthy!%20",
+  "The%20texture,%20who%20could%20love%20the%20mess.%20Stick%20with%20the%20meat%20and%20cheese%20like%20an%20American!%20",
 ];
 
 var questionH3 = $(".question");
@@ -271,11 +271,11 @@ function displayYoda() {
     zodiac = yodaSaying[29];
   }
 
-  var yodaUrl = "https://";
-  // "https://api.funtranslations.com/translate/yoda.json?text=";
+  var yodaUrl ="https" 
+//   "https://api.funtranslations.com/translate/yoda.json?text=";
   fetch(yodaUrl + color + gamingConsole + pineapple + zodiac)
     .then(function (response) {
-      return response.json();
+      return response;
     })
     .then(function (data) {
       console.log(data);
