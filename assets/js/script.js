@@ -271,14 +271,15 @@ function displayYoda() {
     zodiac = yodaSaying[29];
   }
 
-  var yodaUrl = "https";
-  //  "https://api.funtranslations.com/translate/yoda.json?text=";
+  var yodaUrl = "https://";
+  // "https://api.funtranslations.com/translate/yoda.json?text=";
   fetch(yodaUrl + color + gamingConsole + pineapple + zodiac)
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
+      var translation = data.contents.translated;
+      $(".yoda").text(translation);
     });
 }
 
