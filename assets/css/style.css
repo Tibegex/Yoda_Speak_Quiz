@@ -26,6 +26,10 @@
   padding: 1rem;
 }
 
+.animalImg {
+  max-width: 300px;
+}
+
 .quiz {
   display: block;
   flex-wrap: wrap;
