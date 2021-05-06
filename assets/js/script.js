@@ -290,7 +290,6 @@ function displayYoda() {
     });
 }
 
-getDogApi();
 var dogPic = "";
 // FUNCTION FOR DOG API
 function getDogApi() {
@@ -309,15 +308,19 @@ function getDogApi() {
 }
 
 // FUNCTION FOR CAT API
+var catPic = "";
 function getCatApi() {
-  var catUrl = "https://cataas.com/cat?json=true";
+  var catUrl = "https://aws.random.cat/meow";
 
   fetch(catUrl)
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
+      catPic = data.file;
       console.log(data);
+      $(".animalImg").attr("src", catPic);
+      $(".animalImg").attr("alt", "Picture of a random cat");
     });
 }
 
