@@ -90,7 +90,6 @@ var questions = [
 ];
 
 var yodaSaying = [
-
   "You're%20all%20about%20what%20is%20next-%20the%20next%20adventure%20or%20project.%20",
   "If%20tested,%20you%20will%20stand%20your%20ground%20with%20grace%20and%20composure.%20",
   "You%20have%20a%20special%20connection%20to%20nature.%20It%20feeds%20your%20soul.%20",
@@ -105,7 +104,7 @@ var yodaSaying = [
   "Recognizing%20and%20putting%20the%20needs%20of%20others%20first%20works%20for%20you.%20",
   "You%20have%20a%20keen%20sense%20of%20fair%20play%20and%20like%20being%20in%20charge%20of%20keeping%20order.%20",
   "You%20are%20outgoing%20and%20usually%20enjoy%20being%20the%20life%20of%20the%20party%20and%20center%20of%20attention.%20",
- "You%20endear%20yourself%20quickly%20with%20your%20uncanny%20ability%20to%20recall%20names%20and%20tidbits%20of%20info%20about%20others.%20",
+  "You%20endear%20yourself%20quickly%20with%20your%20uncanny%20ability%20to%20recall%20names%20and%20tidbits%20of%20info%20about%20others.%20",
   "You%20do%20things%20slow%20and%20stead.%20Do%20it%20right%20or%20not%20at%20all.%20",
   "You%20have%20a%20special%20knack%20for%20finding%20treasures%20in%20the%20most%20unexpected%20places.%20",
   "You%20are%20comfortable%20projecting%20an%20air%20of%20mystery,%20which%20can%20help%20mask%20moments%20of%20insecurity.%20",
@@ -118,10 +117,10 @@ var yodaSaying = [
   "We%20still%20do%20not%20know%20what%20is%20at%20the%20center%20of%20the%20universe,%20but%20we%20are%20sure%20that%20you%20are%20not%20it.%20",
   "Please%20take%20a%20chill%20pill.%20Sometimes%20it%20is%20okay%20to%20play.%20",
   "Forgive%20and%20forget.%20That%20grudge%20is%20just%20going%20to%20give%20you%20wrinkles.%20",
-  "Yoda%is%the%only%one%who%should%be%green.%Stop%being%jealous.%",
-  "Your%words%have%consequences.%Try%being%a%little%diplomatic%once%and%a%while. %",
-  "Do%you%ever%tire%of%being%an%insufferable%know-it-all?%",
-  "Your%hands%are%too%big!%Must%have%the%bulky%controller!%",
+  "Yoda%20is%20the%20only%20one%20who%20should%20be%20green.%20Stop%20being%20jealous.%20",
+  "Your%20words%20have%20consequences.%20Try%20being%20a%20little%20diplomatic%20once%20and%20a%20while. %20",
+  "Do%20you%20ever%20tire%20of%20being%20an%20insufferable%20know-it-all?%20",
+  "Your%20hands%20are%20too%20big!%20Must%20have%20the%20bulky%20controller!%20",
   "Your%20delicate%20touch%20must%20only%20be%20used%20on%20the%20high%20quality%20gaming%20systems.%20",
   "Buttons!%20Buttons!%20Buttons!%20My%20precious%20buttons!%20",
   "Ignore%20the%20naysayers.%20Pineapple%20simply%20tastes%20good%20and%20is%20healthy!%20",
