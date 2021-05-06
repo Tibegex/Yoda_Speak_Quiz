@@ -271,6 +271,13 @@ function displayYoda() {
     zodiac = yodaSaying[29];
   }
 
+  var animal = JSON.parse(localStorage.getItem("answer3"));
+  if (animal === "Dog") {
+    getDogApi();
+  } else {
+    getCatApi();
+  }
+
   var yodaUrl = "https://";
   // "https://api.funtranslations.com/translate/yoda.json?text=";
   fetch(yodaUrl + color + gamingConsole + pineapple + zodiac)
@@ -283,6 +290,8 @@ function displayYoda() {
     });
 }
 
+getDogApi();
+var dogPic = "";
 // FUNCTION FOR DOG API
 function getDogApi() {
   var dogUrl = "https://dog.ceo/api/breeds/image/random";
@@ -292,13 +301,14 @@ function getDogApi() {
       return response.json();
     })
     .then(function (data) {
+      dogPic = data.message;
       console.log(data);
+      $(".animalImg").attr("src", dogPic);
+      $(".animalImg").attr("alt", "Picture of a random dog");
     });
 }
-getDogApi();
 
 // FUNCTION FOR CAT API
-
 function getCatApi() {
   var catUrl = "https://cataas.com/cat?json=true";
 
@@ -311,4 +321,4 @@ function getCatApi() {
     });
 }
 
-getCatApi();
+function appendPicture() {}
